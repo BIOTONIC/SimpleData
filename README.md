@@ -2,7 +2,7 @@
 - Homework for Infomation Security class
 - A simple website created by Express & MySQL
 
-# Usage
+## Usage
 - Need Node.js, Express & MySQL
 - Create your database by run others/simpledata.sql
 - Change your configuration in others/conf.js
@@ -17,7 +17,7 @@ cat      | 5211314
 eat      | 666666 
 fat      | 555555
 
-# Screenshots
+## Screenshots
 ![](https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/login.png)
 ![](https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/alreadyLogin.png)
 ![](https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/searchResults.png)
