@@ -1,0 +1,32 @@
+body {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.button {
+  background-color: #4fc08d !important;
+  color: #fff !important;
+}
+
+.center-filed {
+  text-align: center;
+}
+
+.full-table {
+  width:100%;
+}
+
+.nav {
+  margin-bottom: 20px;
+  color: #999;
+  text-align: center;
+}
+
+h1 {
+  color: #4fc08d;
+  display: inline-block;
+  margin: 10px 0;
+}
+

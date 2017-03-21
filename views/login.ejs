@@ -1,0 +1,28 @@
+<%- include('header') %>
+
+<div class="ui grid">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+        <form class="ui form segment" method="post">
+            <div class="field required">
+                <label>Username</label>
+                <input type="text" name="name">
+            </div>
+            <div class="field required">
+                <label>Password</label>
+                <input type="password" onkeyup="this.value=this.value.replace(/\D/g,'')" name="password">
+            </div>
+            <input type="submit" class="ui button fluid" value="Login">
+        </form>
+        <div class="ui form segment">
+            <div class="center-filed">
+                <p>
+                    Don't have an account?
+                    <a href="/signup">Signup</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('footer') %>

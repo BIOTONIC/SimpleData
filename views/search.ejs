@@ -1,0 +1,48 @@
+<%- include('header') %>
+
+<div class="ui grid">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+        <form class="ui form segment" method="post">
+            <div class="field">
+                <label>Student Age</label>
+                <input type="number" onkeyup="this.value=this.value.replace(/\D/g,'')" name="age">
+            </div>
+            <input type="submit" class="ui button fluid" value="Search">
+            <% if (Array.isArray(message) && message.length > 0){ %>
+            <table class="ui segment full-table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% for (var i = 0; i < message.length;i++){ %>
+                <tr class="segment center-filed">
+                    <td><%= message[i].sname %></td>
+                    <td><%= message[i].sage %></td>
+                    <td><%= message[i].sclass %></td>
+                    <td><%= message[i].sheight %></td>
+                    <td><%= message[i].sweight %></td>
+                </tr>
+                </tbody>
+                <% } %>
+            </table>
+            <% } %>
+        </form>
+        <div class="ui form segment">
+            <div class="center-filed">
+                <p>
+                    Want to leave?
+                    <a href="/signout">Signout</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('footer') %>
