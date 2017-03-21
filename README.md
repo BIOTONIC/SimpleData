@@ -11,7 +11,7 @@
 - I have already created several counts for test:
 
 username | password
----------|---------
+:-------:|:-------:
 bat      | 233333  
 cat      | 5211314  
 eat      | 666666 
