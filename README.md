@@ -9,6 +9,7 @@
 - Add node modules by run 'npm install' at father path
 - Run 'node bin/www'
 - I have already created several counts for test:
+
 username | password
 ---------|---------
 bat      | 233333  
