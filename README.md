@@ -10,6 +10,6 @@
 - Run 'node bin/www'
 
 # Screenshots
-![]https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/login.png
-![]https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/alreadyLogin.png
-![]https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/searchResults.png
+- ![]https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/login.png
+- ![]https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/alreadyLogin.png
+- ![]https://github.com/BIOTONIC/SimpleData/blob/master/screenShots/searchResults.png
