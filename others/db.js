@@ -12,6 +12,7 @@ function connet() {
 }
 
 function insertUser(conn, username, password, callback) {
+    console.log('insert into user value(' + username + ',' + password + ');');
     conn.query('insert into user value(?,?);', [username, password], function (err, results, fields) {
         if (err)
             throw err;
@@ -20,6 +21,7 @@ function insertUser(conn, username, password, callback) {
 }
 
 function selectUser(conn, username, callback) {
+    console.log('select upass from user where uname = "' + username + '";');
     conn.query('select upass from user where uname ="' + username + '";', function (err, results) {
         if (err)
             return err;
@@ -28,6 +30,7 @@ function selectUser(conn, username, callback) {
 }
 
 function selectStudent(conn, age, callback) {
+    console.log('select * from student where sage ="' + age + '";');
     conn.query('select * from student where sage ="' + age + '";', function (err, results) {
         if (err)
             return err;

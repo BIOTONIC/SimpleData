@@ -13,7 +13,10 @@ router.post('/', isLogin, function (req, res, next) {
     req.session.message = null;
 
     var age = req.body.age;
-
+    if(!age.match("^[0-9]*$")){
+        req.flash('error','Only Numbers Are Valid!');
+        return res.redirect('back');
+    }
     var conn = db.conect();
     var results = null;
     db.selectStudent(conn, age, function (results) {
